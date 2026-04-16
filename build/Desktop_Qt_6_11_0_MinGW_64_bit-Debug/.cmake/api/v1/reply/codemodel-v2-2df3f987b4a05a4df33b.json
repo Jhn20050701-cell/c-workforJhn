@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-fcdd23355fda3bfdf44a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Janpenese-Out-of-China",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Janpenese-Out-of-China::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Janpenese-Out-of-China-Debug-237c7338bf71cc0890c3.json",
+					"name" : "Janpenese-Out-of-China",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Janpenese-Out-of-China_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Janpenese-Out-of-China_autogen-Debug-7ea578c50733dd47a473.json",
+					"name" : "Janpenese-Out-of-China_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Janpenese-Out-of-China_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Janpenese-Out-of-China_autogen_timestamp_deps-Debug-8ab907e7cef3a2c2f446.json",
+					"name" : "Janpenese-Out-of-China_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Janpenese-Out-of-China/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "D:/Janpenese-Out-of-China"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
