@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+c819cc1c6a7482cad349dad77f4c3157 CMakeFiles/Janpenese-Out-of-China_autogen
+9b4a9f0f250c554e40ac1e8183988787 Janpenese-Out-of-China_autogen/timestamp
