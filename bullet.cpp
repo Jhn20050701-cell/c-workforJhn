@@ -1,10 +1,12 @@
 #include "bullet.h"
-#include <QGraphicsScene>
+#include<QGraphicsScene>
 #include <math.h>
-
-Bullet::Bullet(double angle)
+#include<QPainter>
+Bullet::Bullet(double angle, int dmg)
 {
     this->angle = angle;
+    this->damage = dmg;
+
     setRect(0,0,10,10);
     setBrush(Qt::red);
 

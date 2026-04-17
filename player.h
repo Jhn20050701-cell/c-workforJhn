@@ -14,6 +14,8 @@ public:
 protected:
     void keyPressEvent(QKeyEvent *event);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
+private:
+    int damage;
 };
 
 #endif

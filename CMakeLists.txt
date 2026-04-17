@@ -32,6 +32,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         player.cpp
         enemy.h
         enemy.cpp
+        weapon.h
+        weapon.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Janpenese-Out-of-China APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

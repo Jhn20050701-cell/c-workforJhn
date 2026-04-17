@@ -3,7 +3,7 @@
 #include <QGraphicsScene>
 #include <QList>
 #include <math.h>
-
+#include "weapon.h"
 Enemy::Enemy(QGraphicsRectItem* player)
 {
     setRect(0,0,40,40);
@@ -35,15 +35,15 @@ void Enemy::move()
         Bullet* bullet = dynamic_cast<Bullet*>(item);
         if(bullet)
         {
-            health -= 50;
+            health -= bullet->getDamage();   // 用子弹伤害
             scene()->removeItem(bullet);
             delete bullet;
 
             if(health<=0)
             {
                 // 死亡掉落武器
-                QGraphicsRectItem* weapon = new QGraphicsRectItem(0,0,20,20);
-                weapon->setBrush(Qt::yellow);
+
+                Weapon *weapon = new Weapon(Rifle); // 掉落步枪
                 weapon->setPos(x(), y());
                 scene()->addItem(weapon);
 
