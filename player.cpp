@@ -21,7 +21,7 @@ Player::Player(QGraphicsItem *parent)
     pix.fill(Qt::transparent);
     QPainter p(&pix);
     p.setRenderHint(QPainter::Antialiasing);
-
+    // AI辅助编写
     // 1. 八路军军帽 灰色
     p.setBrush(QColor(120,125,130));
     p.setPen(Qt::black);
@@ -62,7 +62,7 @@ Player::Player(QGraphicsItem *parent)
 
     currentWeaponIndex = 0;
     isFiring = false;
-
+    // AI辅助编写
     shootTimer = new QTimer(this);
     shootTimer->setInterval(shootInterval[currentWeaponIndex]);
     shootTimer->setTimerType(Qt::PreciseTimer);
@@ -114,7 +114,7 @@ void Player::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
         shootTimer->stop();
     }
 }
-
+// AI辅助编写
 void Player::shootLoop()
 {
     if (!isFiring) return;
@@ -146,6 +146,6 @@ void Player::takeDamage(int dmg)
     emit hpChanged(health, maxHealth);
 
     if (health <= 0) {
-        qApp->quit();
+        qApp->quit();// AI辅助编写
     }
 }

@@ -34,7 +34,7 @@ protected:
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
 
 private slots:
-    void shootLoop();
+    void shootLoop();// AI辅助编写
 
 private:
     bool isFiring;

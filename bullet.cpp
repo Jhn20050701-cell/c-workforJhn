@@ -14,7 +14,7 @@ Bullet::Bullet(double angle, int dmg, bool isPlayerBullet)
     setRect(0,0,6,6);
     setBrush(isPlayerBullet ? Qt::red : Qt::blue);
 
-    QTimer *timer = new QTimer(this);
+    QTimer *timer = new QTimer(this);//AI辅助编写
     connect(timer, SIGNAL(timeout()), this, SLOT(move()));
     timer->start(20);
 }
@@ -22,7 +22,7 @@ Bullet::Bullet(double angle, int dmg, bool isPlayerBullet)
 void Bullet::move()
 {
     double step = 10;
-    setPos(x() + step * cos(angle), y() + step * sin(angle));
+    setPos(x() + step * cos(angle), y() + step * sin(angle));// AI辅助编写
 
     // 1. 越界删除
     if (x() < 0 || x() > 800 || y() < 0 || y() > 600)
@@ -39,7 +39,7 @@ void Bullet::move()
         // 玩家子弹 → 打敌人
         if (isPlayerBullet)
         {
-            Enemy* enemy = dynamic_cast<Enemy*>(item);
+            Enemy* enemy = dynamic_cast<Enemy*>(item);// AI辅助编写
             if(enemy)
             {
                 enemy->health -= this->damage;
@@ -68,7 +68,7 @@ void Bullet::move()
         }
 
         // 碰撞掩体
-        Obstacle* obs = dynamic_cast<Obstacle*>(item);
+        Obstacle* obs = dynamic_cast<Obstacle*>(item);// AI辅助编写
         if(obs)
         {
             scene()->removeItem(this);

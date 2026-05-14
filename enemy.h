@@ -19,7 +19,7 @@ signals:
     void enemyKilled();
 
 private slots:
-    void move();
+    void move();// AI辅助编写
 
 private:
     Player* playerRef;

@@ -16,7 +16,7 @@ Enemy::Enemy(Player* player, QGraphicsItem *parent)
     playerRef = player;
     health = 100;
     attackCooldown = 0;
-
+    // AI辅助编写
     // 尺寸改为 14×14，适配你的场景
     QPixmap pix(24, 24);
     pix.fill(Qt::transparent);
@@ -36,7 +36,7 @@ Enemy::Enemy(Player* player, QGraphicsItem *parent)
     p.setBrush(QColor(230, 210, 180));
     p.drawEllipse(4, 2, 6, 6); // 脸
 
-    // 4. 眼睛、嘴巴、八字胡（简化适配小尺寸）
+    // 4. 眼睛、嘴巴、八字胡（简化适配小尺寸）// AI辅助编写
     p.setPen(QPen(Qt::black, 1));
     p.drawLine(5, 4, 6, 4.5);  // 左眼
     p.drawLine(8, 4, 7, 4.5);  // 右眼
@@ -65,7 +65,7 @@ void Enemy::move()
     if (!playerRef || health <= 0) return;
 
     // 追踪玩家
-    QPointF dir = playerRef->pos() - pos();
+    QPointF dir = playerRef->pos() - pos();// AI辅助编写
     double len = qSqrt(dir.x()*dir.x() + dir.y()*dir.y());
     if (len > 0) dir /= len;
 

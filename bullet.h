@@ -14,7 +14,7 @@ class Bullet : public QObject, public QGraphicsEllipseItem
 {
     Q_OBJECT
 public:
-    Bullet(double angle, int dmg, bool isPlayerBullet = true); // 重载构造
+    Bullet(double angle, int dmg, bool isPlayerBullet = true); // 重载构造，AI辅助编写
     int getDamage() const { return damage; }
 public slots:
     void move();

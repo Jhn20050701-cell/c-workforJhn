@@ -14,8 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-
+    // AI辅助编写
     scene = new QGraphicsScene(this);
     scene->setSceneRect(0,0,800,600);
 
@@ -66,7 +65,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    // 敌人自动生成定时器
+    // 敌人自动生成定时器// AI辅助编写
     enemySpawnTimer = new QTimer(this);
     // 每3秒生成一个敌人（3000毫秒，可根据需要调整）
     enemySpawnTimer->start(3000);
@@ -127,14 +126,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// 你的原有加分槽函数
+// 你的原有加分槽函数// AI辅助修改
 void MainWindow::addScore()
 {
     score++;
     scoreText->setPlainText(QString("击杀: %1").arg(score));
 }
 
-// 新增：定时生成敌人的函数
+// 新增：定时生成敌人的函数,AI辅助修改
 void MainWindow::spawnEnemy()
 {
     // 随机生成敌人位置（在场景边缘，避免直接刷在玩家脸上）
